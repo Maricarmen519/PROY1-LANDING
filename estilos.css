@@ -60,12 +60,12 @@ body{
 .jumbotron{
     /*height: 80vh;*/
     background: #004AAD;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(226, 82%, 50%, 0.603), hsla(212, 60%, 48%, 0.651)), url(./img/fondo4.jpg);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(251, 77%, 51%, 0.452), hsla(219, 69%, 49%, 0.836)), url(./img/fondo4.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, hsla(226, 82%, 50%, 0.603), hsla(212, 60%, 48%, 0.651)), url(./img/fondo4.jpg);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, hsla(251, 77%, 51%, 0.452), hsla(219, 69%, 49%, 0.836)), url(./img/fondo4.jpg);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background-size: cover;
     width: 1fr;
     display: flex;
 }
@@ -225,7 +225,7 @@ main .sobre-nosotros{
 /*Comentarios de clientes*/
 
 .clientes {
-    margin: 1em 0;
+    margin: .5em 0;
   }
   
   

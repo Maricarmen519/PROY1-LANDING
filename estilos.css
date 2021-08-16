@@ -350,6 +350,7 @@ footer .datos{
 .datos{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 
@@ -365,7 +366,6 @@ footer  ul {
     color: #D89797;
     text-transform: capitalize;
     margin-bottom: 35px;
-    position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
     position: relative;
@@ -450,6 +450,11 @@ footer a:hover{
 /*MQ*/
 
 @media only screen and (max-width: 375px){
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
     .barra-de-navegacion{
         display: flex;
         flex-wrap: wrap;
@@ -458,33 +463,53 @@ footer a:hover{
         font-weight: 200;
         font-size: 9px;
     }
+    .contenedor{
+        height: auto;
+    }
     main .comentarios.comentario{
         width: auto;
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
     }
-    main .coentario img{
+    main .comentario img{
         display: inline-block;
     }
     .imagenes{
         display: inline-block;
     }
     footer{
-        
+       
         box-sizing: border-box;
+        align-content: center;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     footer .info{
         width: auto;
-        display: flex;
-        flex-wrap: wrap;
-        /*grid-template-columns:1fr;*/
-        flex-direction: row;
+        /*flex-wrap: wrap;*/
         grid-gap: 0;
     }
 }
+@media only screen and (max-width: 664px){
+    .barra-de-navegacion{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenedor{
+        height: auto;
+    }
+    footer{
+        display: flex;
+    }
+    .info{
+        flex-wrap: wrap;
+        position: relative;
+        
+    }
 
+}
 /*@media only screen and (min-width: 768px){
     .barra-de-navegacion{
         display: flex;
@@ -523,7 +548,7 @@ footer a:hover{
        
     }
 }
-
+*/
 @media (min-width: 1200px) { 
     main {
 
@@ -532,7 +557,8 @@ footer a:hover{
     }
     footer{
         display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
 
     }
 }
-*/
